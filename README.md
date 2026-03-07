@@ -1,1 +1,68 @@
-# email-authentication-audit-toolkit
+# Email Authentication Audit Toolkit
+
+SPF | DKIM | DMARC | AWS SES | Email Deliverability
+
+This repository provides tools, documentation, and audit checklists used to evaluate and configure email authentication infrastructure.
+
+It is designed for systems administrators, security engineers, and consultants responsible for DNS email authentication and deliverability.
+
+---
+
+## What This Toolkit Covers
+
+Modern email systems require multiple authentication layers to prevent spoofing and improve inbox placement.
+
+This toolkit supports validation and configuration of:
+
+• SPF (Sender Policy Framework)  
+• DKIM (DomainKeys Identified Mail)  
+• DMARC policy enforcement  
+• AWS SES domain authentication  
+• DNS email record validation  
+• deliverability troubleshooting  
+
+---
+
+## Typical Consulting Use Cases
+
+• auditing existing DNS email authentication records  
+• troubleshooting email deliverability problems  
+• verifying AWS SES domain configuration  
+• implementing DMARC enforcement policies  
+• validating DKIM signing after migrations  
+
+---
+
+## Repository Structure
+
+checklists  
+Audit checklists for SPF, DKIM, and DMARC configuration.
+
+setup-guides  
+Step-by-step setup documentation.
+
+aws-ses  
+Amazon SES domain verification and migration runbooks.
+
+scripts  
+PowerShell scripts for DNS inspection and SES audits.
+
+reports  
+Example email authentication audit reports.
+
+---
+
+## Tools Commonly Used
+
+dig  
+nslookup  
+MXToolbox  
+AWS CLI  
+OpenSSL  
+Google Postmaster Tools  
+
+---
+
+## License
+
+MIT License
