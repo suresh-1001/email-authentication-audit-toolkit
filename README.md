@@ -63,6 +63,16 @@ Google Postmaster Tools
 
 ---
 
-## License
+## Example Audit Scenario
 
+Example domain audit workflow:
+
+1. Retrieve SPF record and verify authorized senders
+2. Validate DKIM selectors and DNS records
+3. Inspect DMARC policy and reporting configuration
+4. Check AWS SES domain verification status
+5. Test message headers for authentication results
+6. Generate remediation recommendations
+## License
+---
 MIT License
