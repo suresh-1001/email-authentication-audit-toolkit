@@ -8,7 +8,7 @@ It is designed for systems administrators, security engineers, and consultants r
 
 ---
 
-## What This Toolkit Covers
+# What This Toolkit Covers
 
 Modern email systems require multiple authentication layers to prevent spoofing and improve inbox placement.
 
@@ -23,7 +23,9 @@ This toolkit supports validation and configuration of:
 
 ---
 
-## Typical Consulting Use Cases
+# Typical Consulting Use Cases
+
+This toolkit can be used for:
 
 • auditing existing DNS email authentication records  
 • troubleshooting email deliverability problems  
@@ -33,7 +35,7 @@ This toolkit supports validation and configuration of:
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 checklists  
 Audit checklists for SPF, DKIM, and DMARC configuration.
@@ -52,7 +54,62 @@ Example email authentication audit reports.
 
 ---
 
-## Tools Commonly Used
+# Quick Start
+
+Run a basic DNS authentication audit using the included PowerShell script.
+
+PowerShell:
+
+
+scripts/dns-email-record-check.ps1
+
+
+Example:
+
+
+.\dns-email-record-check.ps1 example.com
+
+
+This script checks:
+
+• SPF record  
+• DKIM selectors  
+• DMARC policy  
+
+This provides a quick snapshot of the domain's email authentication configuration.
+
+---
+
+# Example Domain Audit
+
+Example checks performed during an audit:
+
+dig TXT example.com
+
+dig TXT _dmarc.example.com
+
+dig TXT selector1._domainkey.example.com
+
+Validate message headers:
+
+Authentication-Results:
+
+spf=pass
+dkim=pass
+dmarc=pass
+
+
+This confirms that:
+
+• SPF authorization succeeded  
+• DKIM signature validation succeeded  
+• DMARC alignment passed  
+
+---
+
+# Tools Commonly Used
+
+During authentication audits the following tools are often used:
 
 dig  
 nslookup  
@@ -63,16 +120,19 @@ Google Postmaster Tools
 
 ---
 
-## Example Audit Scenario
+# Example Audit Scenario
 
 Example domain audit workflow:
 
-1. Retrieve SPF record and verify authorized senders
-2. Validate DKIM selectors and DNS records
-3. Inspect DMARC policy and reporting configuration
-4. Check AWS SES domain verification status
-5. Test message headers for authentication results
-6. Generate remediation recommendations
-## License
+1. Retrieve SPF record and verify authorized senders  
+2. Validate DKIM selectors and DNS records  
+3. Inspect DMARC policy and reporting configuration  
+4. Check AWS SES domain verification status  
+5. Test message headers for authentication results  
+6. Generate remediation recommendations  
+
 ---
+
+# License
+
 MIT License
