@@ -38,19 +38,19 @@ This toolkit can be used for:
 
 # Repository Structure
 
-checklists  
+• checklists  
 Audit checklists for SPF, DKIM, and DMARC configuration.
 
-setup-guides  
+• setup-guides  
 Step-by-step setup documentation.
 
-aws-ses  
+• aws-ses  
 Amazon SES domain verification and migration runbooks.
 
-scripts  
+• scripts  
 PowerShell scripts for DNS inspection and SES audits.
 
-reports  
+• reports  
 Example email authentication audit reports.
 
 ---
