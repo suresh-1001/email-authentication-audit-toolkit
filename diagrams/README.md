@@ -16,7 +16,7 @@ The following diagram shows how email authentication mechanisms work together:
 4. The DMARC policy is evaluated
 5. The email is delivered to the recipient inbox if authentication succeeds
 
-![Email Authentication Flow](email-authentication-flow.jpg)
+![Email Authentication Flow](email-authentication-flow.png)
 
 ---
 
