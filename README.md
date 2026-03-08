@@ -1,4 +1,5 @@
 # Email Authentication Audit Toolkit
+Consulting toolkit for auditing and configuring DNS-based email authentication (SPF, DKIM, DMARC) including AWS SES environments.
 
 SPF | DKIM | DMARC | AWS SES | Email Deliverability
 
