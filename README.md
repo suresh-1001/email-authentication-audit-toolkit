@@ -15,7 +15,14 @@ It is designed for systems administrators, security engineers, and consultants r
 ![Email Authentication Flow](diagrams/email-authentication-flow.png)
 
 ---
+## Features
 
+- SPF, DKIM, and DMARC audit checklists
+- PowerShell scripts to validate DNS authentication records
+- AWS SES verification and migration runbooks
+- Sample email authentication audit report
+- Architecture diagrams explaining authentication flow
+---
 ## What This Toolkit Covers
 
 Modern email systems require multiple authentication layers to prevent spoofing and improve inbox placement.
